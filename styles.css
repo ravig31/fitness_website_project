@@ -7,6 +7,7 @@
     tab-size: 4;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     text-overflow: nowrap;
+    color: #3b394b;
 }
 
 html{
@@ -29,7 +30,7 @@ input[type="email"]
 }
 
 .blue{
-    color: #2f6deb;
+    color: #1f4fb0;
 }
 
 .white{
@@ -95,7 +96,7 @@ li{
 .nav_link-primary{
     padding: 12px 32px;
     border-radius: 24px;
-    background-color:#242424;
+    background-color:#1f4fb0;
     border-bottom-width: 0px;
     transition: all 300ms ease;
 
@@ -174,11 +175,12 @@ li{
     width: 100%;
     border-radius: 9999px;
     border-width: 2px;
-    border-color: rgb(124 139 161 / var(--tw-text-opacity));;
     font-weight: 500; 
     width: 100%;
     outline: none;
     opacity: 0.5;
+    border-style: solid;
+    border-color: #a39f9f;
     
  
 }
@@ -187,7 +189,7 @@ li{
     font-size: 18px;
 }
 
-.get_started button{
+.get_started-btn{
     position: absolute;
     height: 60px;
     width: 38%;
@@ -198,14 +200,6 @@ li{
     justify-content: center;
     align-items: center;
     z-index: 2;
-    cursor: pointer;
-    border-radius: 9999px;
-    background-color: #242424;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #fff;
-    border-color: #242424;
         
 }
 
@@ -213,12 +207,43 @@ button{
     appearance: button;
     background-color: transparent;
     background-image: none;
+    cursor: pointer;
+    border-radius: 9999px;
+    background-color: #1f4fb0;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    border-style: none;
 }
 
 button:hover{
     transform: scale(0.95);
     cursor: pointer;
 }
+
+/* SECTION TEXT STYLING */
+
+.section_title{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+.section_tagline{
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    font-size: 56px ;
+}
+
+.section_para{
+    font-weight: 500;
+    line-height: 1.625;
+    color: rgb(127, 121, 121);
+    font-size: large;
+
+}
+
 
 /* FEATURES */
 
@@ -228,27 +253,107 @@ button:hover{
     align-items: center;
 }
 
-.features_title{
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.6px;
+.feat_description_title{
+    text-align: center;
+    width: 100%;
 }
 
-.feat_description_title{
-    width: 100%;
-    font-weight: 900;
-    letter-spacing: 0.4px;
-    text-align: center;
-    font-size: 56px ;
-}
 
 .feat_description_para{
     text-align: center;
     width: 100%;    
     margin-top: 16px;
-    max-width: 576px;
-    font-weight: 500;
-    line-height: 1.625;
-    color: rgb(77, 72, 72)
+    max-width: 576px; 
+}
 
+.service_list{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service{
+    width: 45%;
+    max-width: 36rem;
+    display: flex;
+}
+
+.icon-wrapper{
+    flex-shrink: 0;
+    border-radius: 9999px;
+    border-width: 4px;
+    padding: 20px;
+    text-align: center;
+}
+
+.icon{
+    width:  65px;
+    height: 65px;
+    border-radius:  50%;
+    padding: 20px;
+    border: solid 1px #b8b6b6;
+    margin: 10px;
+}
+
+.service_title{
+    margin-top: 36px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    font-size: 26px;
+}
+
+.service_para{
+    margin-top: 16px;
+    font-weight: 500;
+    line-height: 2;
+    --tw-text-opacity: 1;
+    color: rgb(124 139 161 / var(--tw-text-opacity));
+}
+
+/* QUALITIES */
+
+.qualities_container{
+    margin-top: 140px;
+    display: flex;
+    padding: 36px;
+}
+.quality_description{
+    width: 50%;
+}
+
+.quality_img-wrapper{
+    width: 45%;
+    max-width: 448px;
+    margin: 0 auto;
+    margin-right: 40px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.quality_img{
+    max-width: 100%;
+    border-radius: 0.25rem;
+    height: auto;
+
+}
+
+.quality_para{
+    margin-top: 16px;
+}
+
+.quality-btn{
+    margin-top: 32px;
+    height: 50px;
+    width: 26%;
+    right: 4px;
+    bottom: 9px;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 14px;
 }
