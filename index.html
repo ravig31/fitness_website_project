@@ -7,6 +7,7 @@
     <title>Fitness</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -25,12 +26,40 @@
                         <li><a href="#" class="nav_link nav_link-primary"><span class="white">Sign Up</span></a></li>
                     </ul>
                 </ul>
+                <button class="btn_menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu_backdrop">
+                    <button class="btn_menu btn_menu-close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu_links">
+                        <li class="menu_list">
+                            <a href="#" class="menu_link" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="#features" class="menu_link" onclick="closeMenu()">Blog</a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="#pricing" class="menu_link no-cursor" onclick="closeMenu()">Pricing</a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="#" class="menu_link no-cursor" onclick="closeMenu()">Contact Us</a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="#" class="menu_link no-cursor" onclick="closeMenu()">Login</a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="#" class="menu_link no-cursor" onclick="closeMenu()">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </section>
     <header>
         <div class="header_container">
-            <div class="row">
+            <div class="header_row">
                 <div class="header_description">
                     <h1 class="header_title">
                         Tailored Fitness 
@@ -42,7 +71,7 @@
                     </p>
                     <div class="get_started">
                         <input type="email" placeholder="Your E-mail Address">
-                        <button class="get_started-btn">Get Started</button>
+                        <button class="button get_started-btn">Get Started</button>
                     </div>
                 </div>
                 <figure class="header_img-wrapper">
@@ -53,7 +82,7 @@
     </header>
     <main>
         <section id="features">
-            <div class="feature_container">
+            <div class="centre_section_container">
                 <h3 class="section_title feature_title">
                     <span class="blue">features</span>
                 </h3>
@@ -83,7 +112,7 @@
                         </figure>
                         <div class="service_description">
                             <h2 class="service_title">
-                                24/7 Support
+                                24/7 Q&A
                             </h2>
                             <p class="service_para">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias necessitatibus obcaecati.
@@ -117,10 +146,10 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
         </section>
         <section id="qualities">
-            <div class="qualities_container">
+            <div class="odd_section_container qualities_container">
                 <div class="quality_description">
                     <h3 class="section_title quality_title">
                         <span class="blue">Quality Work</span> 
@@ -131,13 +160,290 @@
                     <p class="section_para quality_para">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae aperiam sapiente iste, deleniti inventore qui veritatis assumenda corrupti repudiandae architecto. Consequuntur, corporis aperiam necessitatibus tenetur impedit doloremque consectetur sint voluptatum.
                     </p>
-                    <button class="quality-btn">Learn More</button>
+                    <button class="button quality-btn">Learn More</button>
                 </div>
                 <div class="quality_img-wrapper">
                     <img class="quality_img" src="./assets/undraw_fitness_stats_sht6.svg">
                 </div>
             </div>
         </section>
+        <section id="steps">
+            <div class="even_section_container steps_container">
+                <div class="steps_img-wrapper">
+                    <img class="steps_img" src="./assets/undraw_project_completed_re_jr7u.svg">
+                </div>
+                <div class="steps_description">
+                    <h3 class="section_title steps_title">
+                        <span class="blue">Steps</span> 
+                    </h3>
+                    <h1 class="section_tagline steps_tagline">
+                        Easy to <span class="blue">Get Started.</span>
+                    </h1>
+                    <div class="steps">
+                        <div class="step">
+                            <h2 class="step_number">
+                                01
+                            </h2>
+                            <div class="step_text">
+                                <h3 class="step_title">
+                                    Register
+                                </h3>
+                                <p class="step_para">
+                                    Create an account with us using Google or Facebook
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h2 class="step_number">
+                                02
+                            </h2>
+                            <div class="step_text">
+                                <h3 class="step_title">
+                                    Personalise
+                                </h3>
+                                <p class="step_para">
+                                    Consult with us to find the program that works for you
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h2 class="step_number">
+                                03
+                            </h2>
+                            <div class="step_text">
+                                <h3 class="step_title">
+                                    Begin
+                                </h3>
+                                <p class="step_para">
+                                    Begin your fitness journey
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="values">
+            <div class="odd_section_container values_container">
+                <div class="values_description">
+                    <h3 class="section_title values_title">
+                        <span class="blue">Values</span> 
+                    </h3>
+                    <h1 class="section_tagline values_tagline">
+                        We Always Abide by <span class="blue">Principles.</span> 
+                    </h1>
+                    <p class="section_para values_para">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae aperiam sapiente iste, deleniti inventore qui veritatis assumenda corrupti repudiandae architecto. Consequuntur, corporis aperiam necessitatibus tenetur impedit doloremque consectetur sint voluptatum.
+                    </p>
+                    <div class="values_sub_paras">
+                        <div class="values_sub_para">
+                            <div class="title_icon_wrapper">
+                                <div class="dollar_sign-wrapper">
+                                   
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                                </div>
+                                <h3 class="sub_para_title">
+                                    Affordable
+                                </h3>
+                            </div>
+                            <p class="sub_para">
+                                We promise to offer you the best rate we can - at par with the industry standard.
+                            </p>
+                        </div>
+                        <div class="values_sub_para">
+                            <div class="title_icon_wrapper">
+                                <div class="briefcase-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                                </div>
+                                <h3 class="sub_para_title">
+                                    Professionalism
+                                </h3>
+                            </div>
+                            <p class="sub_para">
+                                We assure you that our templates are designed and created by professional designers.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="button values-btn">Learn More</button>
+                </div>
+                <div class="values_img-wrapper">
+                    <img class="values_img" src="./assets/undraw_fitness_stats_sht6.svg">
+                </div>
+            </div>
+        </section>
+        <section id="pricing">
+            <div class="centre_section_container pricing_container">
+                <h3 class="section_title section_title">
+                    <span class="blue">Pricing</span>
+                </h3>
+                <h1 class="section_tagline price_description_title">
+                    Reasonable & Flexible <span class="blue">Plans.</span>
+                </h1>
+                <p class="section_para price_description_para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus maiores id, iste aspernatur praesentium ab iusto minus.
+                </p>
+                <div class="packages">
+                    <div class="package">
+                        <div class="topline topline_1"></div>
+                        <div class="pricing_info">
+                            <h3 class="pricing_title">
+                                personal
+                            </h3>
+                            <h2 class="price">
+                                $17.99
+                            </h2>
+                            <h4 class="pricing_period">
+                                MONTHLY
+                            </h4>
+                        </div>
+                        <div class="package_content">
+                            <h3 class="pricing_target">
+                                For Beginners
+                            </h3>
+                            <ul class="content">
+                                <li class="content_item">Package Content</li>
+                                <li class="content_item">Package Content</li>
+                                <li class="content_item">Package Content</li>
+                                <li class="content_item">Package Content</li>
+                            </ul>
+                        </div>
+                        <div class="pricing_button-wrapper">
+                            <button class="button pricing_button first-btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="package centre_package">
+                        <div class="pricing_info">
+                            <h3 class="pricing_title middle_text_item">
+                                business
+                            </h3>
+                            <h2 class="price middle_text_item middle_price">
+                                $37.99
+                            </h2>
+                            <h4 class="pricing_period middle_text_item">
+                                MONTHLY
+                            </h4>
+                        </div>
+                        <div class="package_content ">
+                            <h3 class="pricing_target middle_text_item">
+                                For Intermediates
+                            </h3>
+                            <ul class="content">
+                                <li class="content_item middle_text_item">Package Content</li>
+                                <li class="content_item middle_text_item">Package Content</li>
+                                <li class="content_item middle_text_item">Package Content</li>
+                                <li class="content_item middle_text_item">Package Content</li>
+                            </ul>
+                        </div>
+                        <div class="pricing_button-wrapper">
+                            <button class="button pricing_button second-btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <div class="topline topline_3"></div>
+                        <div class="pricing_info">
+                            <h3 class="pricing_title">
+                                enterprise
+                            </h3>
+                            <h2 class="price">
+                                $57.99
+                            </h2>
+                            <h4 class="pricing_period">
+                                MONTHLY
+                            </h4>
+                        </div>
+                        <div class="package_content">
+                            <h3 class="pricing_target">
+                                For Athletes
+                            </h3>
+                            <ul class="content">
+                                <li class="content_item">Package Content</li>
+                                <li class="content_item">Package Content</li>
+                                <li class="content_item">Package Content</li>
+                                <li class="content_item">Package Content</li>
+                            </ul>
+                        </div>
+                        <div class="pricing_button-wrapper">
+                            <button class="button button pricing_button third-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="footer_container">
+            <div class="link_lists">
+                <div class="link_list">
+                    <h3 class="link_list_title">
+                        MAIN
+                    </h3>
+                    <ul class="footer_links">
+                        <li class="footer_link"><a href="" class="footer_tag">Blog</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">FAQs</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">Support</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="link_list">
+                    <h3 class="link_list_title">
+                        PRODUCT
+                    </h3>
+                    <ul class="footer_links">
+                        <li class="footer_link"><a href="" class="footer_tag">Blog</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">FAQs</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">Support</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="link_list">
+                    <h3 class="link_list_title">
+                        PRESS
+                    </h3>
+                    <ul class="footer_links">
+                        <li class="footer_link"><a href="" class="footer_tag">Blog</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">FAQs</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">Support</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="link_list">
+                    <h3 class="link_list_title">
+                        TEAM
+                    </h3>
+                    <ul class="footer_links">
+                        <li class="footer_link"><a href="" class="footer_tag">Blog</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">FAQs</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">Support</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="link_list link_list-last">
+                    <h3 class="link_list_title">
+                        LEGAL
+                    </h3>
+                    <ul class="footer_links">
+                        <li class="footer_link"><a href="" class="footer_tag">Blog</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">FAQs</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">Support</a></li>
+                        <li class="footer_link"><a href="" class="footer_tag">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_copyright">Copyright &copy; 2021 Fitness. All Rights Reserved.</div>
+                <div class="social_links">
+                    <a href="" class="social_link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social_link">
+                        <i class="fab fa-twitter"></i>                        
+                    </a>
+                    <a href="./assets/Example Resume.pdf" target="_blank" class="social_link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
